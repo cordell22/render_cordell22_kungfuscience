@@ -70,6 +70,10 @@ app.use(express.urlencoded({ extended: false }))
 app.use(methodOverride('_method'))
 
 
+// Serve static files from the 'public' directory
+app.use(express.static('public'));
+
+
 
 // Configure storage for uploaded files
 const storage = multer.diskStorage({

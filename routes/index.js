@@ -15,7 +15,11 @@ router.get('/', function(req, res) {
 });
 */
 
-const indexController = require('../controllers/mv_indexController');
+/*  const indexController = require('../controllers/mv_indexController');
+
+kungfuscience!!!
+*/
+const indexController = require('../controllers/kfs_indexController');
 const registerController = require('../controllers/mv_registerController');
 const authController = require('../controllers/mv_authController');
 const newProductController = require('../controllers/mv_newProductController');
@@ -148,6 +152,7 @@ router.get('/dashboard', ensureAdmin, dashController.dashboard);
 
 
 // Landing page route
+//  kungfuscience!!!
 router.get('/', indexController.landingPage);
 
 
